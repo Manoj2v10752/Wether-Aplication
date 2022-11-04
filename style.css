@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('./assets/home.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+}
+.navi {
+    width: 70vh;
+    margin: 10vh auto;
+    background-color: rgba(240,248,255, 0.6);
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+}
+.navi h1{
+    font-family: 'Abril Fatface', cursive;
+}
+
+.navi > * {
+    margin-bottom: 20px;
+}
+.search-Box{
+    display: flex;
+  align-items: left;
+  justify-content: center;
+}
+.icon{
+    margin: 10px 10px 10px 10px ;
+}
+.input-box {
+    width: 100%;
+    background-color: rgba(255,255,255,0.6);
+    border: none;
+    outline: none;
+    color: #c7461b;
+    font-size: 1.0rem;
+    height: 45px;
+    border-radius: 2px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.input-box:focus {
+    background-color: rgba(255,255,255);
+}
+button {
+    border: none;
+    height: 45px;
+    width: 70px;
+    background:rgba(15, 151, 69, 0.6) ;
+    color: #582233;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border-radius: 5px;
+  }
+  button:hover {
+    background-color: rgb(18, 52, 44);
+    color: #000;
+}
+
+.weather-body {
+    display: none;
+    color: #bd6a0a;
+    padding: 20px;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.6);
+    height: 70vh;
+}
+.city{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(17, 125, 59);
+}
+.location-details {
+    font-weight: bold;
+}
+
+.weather-status {
+    padding: 20px;
+}
+
+.temp {
+    font-size: 50pt;
+    font-weight: 700;
+    margin: 20px 0;
+    text-shadow: 2px 4px rgba(5, 227, 123, 0.3);
+}
+
+.min-max, .weather {
+    font-size: 12pt;
+    font-weight: 600;
+}
+.weather{
+    background-color: red;
+    color: white;
+}

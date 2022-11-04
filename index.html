@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/icon.jpg" type="image">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Report</title>
+</head>
+<body>
+    <div class="navi">
+        <h1>Weather APP</h1>
+            <div class="search-Box">
+                <input type="text" id="input-box" class="input-box" placeholder="City Name(or)Pincode" autocomplete="off">
+                    <button onclick="searchvalue()"  class="submit">
+                <i class="search"><img src="./assets/sarch.svg" alt="search image"></i>
+       </button>
+        </div>
+
+        <div class="weather-body">
+            <div class="location-details">
+                <p class="icon"><img src="./assets/clouds.svg" alt="icon"></p>
+                <div class="city" id="city">Bengaluru, IN</div>
+                <div class="date" id="date">01 Nov (Tusday), 2022</div>
+            </div>
+
+            <div class="weather-status">
+                <div class="temp" id="temp">30&deg;C</div>
+                <div class="min-max" id="min-max">22&deg;C (min) / 34&deg;C (max)</div>
+                <div class="humidity">50%</div>
+                <div class="weather" id="weather">Clear</div>
+                <div id="image"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
